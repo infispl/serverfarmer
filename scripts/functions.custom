@@ -1,6 +1,10 @@
 # This file holds implementation of owner-specific logic, eg. custom paths
 # or names. If you want to fork the Server Farmer repository and use it for
-# your own company, this should be the first file to change afterwards.
+# your own company, this should be the first file to change afterwards
+# (and functions.keys should be the second one).
+#
+# See here for the description of each setting:
+# http://serverfarmer.org/configuration.html
 
 
 external_domain() {
@@ -9,20 +13,6 @@ external_domain() {
 
 internal_domain() {
 	echo "internal"
-}
-
-ssh_dedicated_key_storage_filename() {
-	server=$1
-	user=$2
-	echo "/etc/local/.ssh/key-$user@$server"
-}
-
-ssh_management_key_storage_filename() {
-	echo "/etc/local/.ssh/id_backup_default"
-}
-
-ssh_management_key_string() {
-	echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1yAlWUC26oJ2TbAfqdk+GFBcLNCU3G1f2iG1pmGFLlFCxdozQ+sz2YGddhZlPPaZTFC6Mba8K7HIHOkl3dxaUV1Toejep8iMr+qUpveDvt+HZPoo/LxgfSdZ7eNpXxRqAsK+eZIPc+oHyeoUtt/Wm2jWrUSoue8sYln2d95Egid75cEMwt/ZVYHTw0AdgWw+/MQjAPsvu2XSS5DTva/MinlJHUWPP7xMd3jNumF34zSfnDqrIvtBxKXn9sq8nTlQHHVGuilBMuPl1+5iwZW/DbQboJiHJ7tH3WgTWWcdjMkWasJ6F7FCDScyRkFKutsjiAUm0m3D14qsjhx3txCn5 root@sauron.dom"
 }
 
 gpg_backup_key() {
