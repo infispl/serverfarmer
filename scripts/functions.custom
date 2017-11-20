@@ -44,7 +44,7 @@ cacti_ssh_port() {
 }
 
 heartbeat_url() {
-	echo "http://monitoring.espeo.pl/cgi-bin/heartbeat-local.cgi"
+	echo "http://heartbeat.tomaszklim.pl/cgi-bin/heartbeat-local.cgi"
 }
 
 connectivity_check_url() {
