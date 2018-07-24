@@ -53,7 +53,7 @@ extension_repositories() {
 }
 
 keys_repository() {
-	echo "https://github.com/infispl/sf-keys"
+	echo "https://github.com/serverfarmer/sf-keys"
 }
 
 backup_history_index() {
